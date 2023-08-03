@@ -1,25 +1,33 @@
 {
-  "name": "JATE",
+  "name": "text_editor_progressive_web_applications",
   "version": "1.0.0",
-  "description": "",
+  "description": "The Text Editor, which can be installed as a Progressive Web Application, empowers users to save their thoughts while on the go, even in offline mode, by preloading the source code into the browser. Moreover, it integrates multiple data persistence techniques like local storage and indexDB to provide redundancy in case any of these options are unsupported by the browser.",
   "main": "server.js",
+  "engines": {
+    "node": "20.x",
+    "npm": "6.x"
+  },
   "scripts": {
-    "start:dev": "concurrently \"cd client && npm run start\" \"cd server && npm run watch\" ",
+    "heroku-prebuild": "cd client && npm install --dev",
+    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
     "start": "npm run build && cd server && node server.js",
-    "server": "cd server && npm run server",
+    "server": "cd server nodemon server.js --ignore client",
     "build": "cd client && npm run build",
     "install": "cd server && npm i && cd ../client && npm i",
-    "client": "cd client && npm run dev"
+    "client": "cd client && npm start"
   },
   "keywords": [],
-  "author": "",
+  "author": "JonathanFadera",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "node": "^18.14.0",
+    "workbox-webpack-plugin": "^7.0.0"
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "webpack-cli": "^5.1.4"
   }
 }
