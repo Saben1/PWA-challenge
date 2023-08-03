@@ -11,7 +11,6 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Deployment](#deployment)
-- [License](#license)
 - [Contact](#contact)
 
 ## Description
