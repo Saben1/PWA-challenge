@@ -4,8 +4,7 @@
     "description": "",
     "main": "server.js",
     "scripts": {
-        "server": "node server.js",
-        "watch": "nodemon server.js"
+        "server": "node server.js --ignore client"
     },
     "keywords": [],
     "author": "",
