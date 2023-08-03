@@ -53,12 +53,12 @@ This project is a progressive web application (PWA) text editor that allows user
 
 ## Deployment
 
-The application is deployed on Heroku and can be accessed at [Live URL](https://your-app-url-here).
+The application is deployed on Heroku and can be accessed at [Live URL](https://pwa-saben-42a46b3754fc.herokuapp.com/).
 
 
 ## Contact
 
 For any inquiries or questions, feel free to reach out to:
 
-- Your Name: [your-email@example.com](mailto:your-email@example.com)
-- Project Link: [GitHub Repo](https://github.com/your-username/your-repo-name)
+1. GitHub Username:Saben1
+2. Email:budhathokisabin303@gmail.com
